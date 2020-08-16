@@ -1,0 +1,378 @@
+body
+,textarea {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    font-size: $default-font-size;
+    color: $color-grey-dark;
+}
+
+a:link
+,a:visited {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+i.material-icons {
+    font-size: 2.4rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.hero {
+    color: $color-white;
+    text-align: left;
+
+    &-heading {
+        direction: rtl;
+
+        &-main {
+            font-size: $heading-primary-main-font-size;
+            line-height: 7.5rem;
+
+            // ======
+            // Mobile
+            // ======
+
+            @media only screen and (max-width: 740px) {
+                font-size: 4rem;
+                line-height: 4.5rem;
+            }
+
+            &:first-child {
+                font-weight: 800;
+            }
+
+            &:not(:first-of-type) {
+                font-weight: 400;
+                letter-spacing: -.2rem;
+            }
+        }
+
+        &-sub {
+            font-size: $heading-primary-sub-font-size;
+            font-weight: 300;
+        }
+    }
+}
+
+.works {
+    &-heading {
+        direction: rtl;
+
+        &-main {
+            font-size: $heading-primary-main-font-size;
+            font-weight: 400;
+            letter-spacing: -.2rem;
+        }
+    }  
+    
+    &-grid {
+        &-nav {
+            direction: rtl;
+
+            a {
+                font-size: 2rem;
+                color: $color-grey-mid;
+            }
+        }
+    }
+}
+
+.questions {
+    &-heading {
+        &-main {
+            font-size: $heading-primary-main-font-size;
+            font-weight: 400;
+            letter-spacing: -.2rem;
+        }
+
+        .btn {
+            color: $color-white;
+        }
+    }
+}
+
+.contact {
+    direction: rtl;
+
+    &-heading {
+        font-size: $heading-primary-main-font-size;
+        font-weight: 400;
+        letter-spacing: -.2rem;
+
+        // ======
+        // Mobile
+        // ======
+
+        @media only screen and (max-width: 414px) {
+            font-size: 4rem;
+        }
+    }
+
+    &-paragraph {
+        font-size: $default-font-size;
+        margin-bottom: 2rem;
+
+        // ======
+        // Tablet
+        // ======
+
+        @media only screen and (max-width: 800px) {
+            font-size: 2.4rem;
+        }
+
+        // ======
+        // Mobile
+        // ======
+
+        @media only screen and (max-width: 414px) {
+            font-size: 2rem;
+        }
+
+        span {
+            margin-left: .25rem;
+        }
+
+        img {
+            margin-bottom: -.25rem;
+            width: 2rem;
+        }
+    }
+
+    &-form-input {
+        &::placeholder {
+            color: $color-grey-mid;
+        }
+    }
+}
+
+.about-page {
+    .content {
+        .text-field {
+            h2 {
+                font-size: $heading-secondary-font-size;
+                font-weight: 400;
+            }
+
+            p {
+                color: $color-grey-mid;
+
+                &:not(:last-of-type) {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.FAQ {
+    &-heading {
+        h1 {
+            font-size: $heading-primary-main-font-size;
+            font-weight: 400;
+        }
+    }
+}
+
+.contact-page {
+    .content {
+        .text-field {
+            h2 {
+                font-size: $heading-secondary-font-size;
+                font-weight: 400;
+            }
+    
+            p
+            ,li {
+                color: $color-grey-mid;
+            }
+
+            h3 {
+                font-size: $heading-tertiary-font-size;
+                font-weight: 400;
+            }
+
+            .phone-li {
+                direction: ltr;
+            }
+
+            .social-media-icon {
+                a {
+                    color: $color-grey-mid;
+                }
+            }
+        }        
+    }
+}
+
+.PNF {
+    text-align: center;
+
+    h1 {
+        font-size: $heading-primary-main-font-size;
+        font-weight: 400;
+        color: black;
+        letter-spacing: -.25rem;
+        line-height: 100%;
+    }
+}
+
+// ==============================================================================================================================================================================================
+    // Components
+// ==============================================================================================================================================================================================
+
+header {
+    font-size: 2rem;
+}
+
+.header-home {
+    color: $color-white;
+
+    a {
+        color: $color-white;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .right-section > a {
+            color: $color-grey-dark;
+        }
+    }
+
+    #main-header-menu {
+        &:checked ~ label { 
+            color: $color-grey-dark;
+        }
+    }
+}
+
+.header-pages {
+    color: $color-grey-dark;
+
+    a {
+        color: $color-grey-dark;
+    }
+}
+
+.ruler-heading {
+    h1
+    ,h2 {
+        font-size: $heading-primary-main-font-size;
+        font-weight: 400;
+
+        // ======
+        // Mobile
+        // ======
+
+        @media only screen and (max-width: 414px) {
+            font-size: 4rem;
+        }
+    }
+}
+
+.btn {
+    color: $color-white;
+    font-size: $heading-primary-sub-font-size;
+
+    // ======
+    // Mobile
+    // ======
+
+    @media only screen and (max-width: 414px) {
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: 360px) {
+        font-size: 1.2rem;
+    }
+}
+
+.card {
+    font-size: $default-font-size;
+    color: $color-grey-dark;
+
+    h3 {
+        font-size: $heading-secondary-font-size;
+        font-weight: 300;
+    }
+
+    p {
+        color: $color-grey-mid;
+    }
+}
+
+.carousel-nav {
+    .current-slide {
+        color: $color-grey-dark;
+    }
+}
+
+.FAQ {
+    &-content {
+        &-nav {
+            a {
+                color: $color-grey-mid;
+            }
+        }
+
+        &-carousel {
+            &-track-slide {
+                margin-top: 2rem;
+            }
+
+            .FAQ-article-paragraph {
+                h3 {
+                    font-size: $heading-secondary-font-size;
+                    font-weight: 300;
+                }
+        
+                p {
+                    color: $color-grey-mid;
+                }
+            }
+        
+            .what-is-a-good-logo {
+                p {
+                    .br {
+                        display: block;
+                        margin-bottom: 1rem;
+
+                        span {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    font-size: $footer-font-size;
+    color: $color-grey-mid;
+
+
+    .col {
+        list-style: none;
+
+        a {
+            color: $color-grey-mid;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+// =========================================================================================
+
+// @media only screen and (min-width: 1920px) {
+//     .hero {
+//         text-align: center;
+//     }
+// }

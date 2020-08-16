@@ -1,0 +1,103 @@
+.contact-form {
+    width: 100%;
+    
+    &-group {
+        margin-left: 1rem;
+
+        // ======
+        // Mobile
+        // ======
+
+        @media only screen and (max-width: 414px) {
+            margin-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        i {
+            font-size: 1.8rem;
+            color: $color-grey-mid;
+        }
+    }
+    
+    &-label {
+        display: none;
+    }
+
+    &-input {
+        width: 100%;
+        display: inline-block;
+        font-size: $default-font-size;
+        padding: 1rem 4rem;
+        border: .15rem solid $color-grey-mid;
+        border-radius: 5rem;
+
+        transition: border .3s;
+
+        &:focus {
+            outline-color: transparent;
+
+            &:invalid {
+                border: .15rem solid rgba($color-primary, .7);
+
+                & ~ i {
+                    color: $color-primary;
+                }
+            }
+        }
+
+        &:valid {
+            border: .15rem solid $color-black;
+
+            & ~ i {
+                color: $color-black;
+            }
+        }
+    }
+
+    i {
+        transition: color .3s;
+    }
+}
+
+.contact-page-form {
+
+    @media only screen and (max-width: 660px) {
+        margin-top: 3rem;
+    }
+
+    .contact-form-group {
+        width: 40rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+
+        @media only screen and (max-width: 660px) {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+            padding: .5rem 3.5rem .5rem 1.5rem;
+            border: .15rem solid $color-grey-mid;
+            border-radius: 1.5rem;
+
+            transition: border .3s;
+
+            &:focus {
+                border-color: $color-black;
+                outline-color: transparent;
+            }
+        }
+
+        &:last-of-type {
+            i {
+                position: absolute;
+                top: 2rem;
+                right: 1rem;
+            }
+        }
+    }
+}
+
+textarea {
+    resize: vertical;
+}

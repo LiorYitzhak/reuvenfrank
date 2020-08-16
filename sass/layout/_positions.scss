@@ -1,0 +1,180 @@
+.hero {
+    position: relative;
+
+    .arrow {
+        position: absolute;
+        right: 13.5%;
+        bottom: -80%;
+
+        // =======
+        // Desktop
+        // =======
+
+        @media only screen and (max-height: 1080px) {
+            bottom: -60%;
+        }
+
+
+        @media only screen and (max-height: 768px) {
+            bottom: -25%;
+        }
+
+        // ======
+        // Tablet
+        // ======
+
+        @media only screen and (max-width: 1280px) {
+            right: 14%;
+            bottom: -30%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            right: 18%;
+            bottom: -95%;
+        }
+
+        @media only screen and (max-width: 800px) {
+            right: 22%;
+            bottom: -90%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            right: 22%;
+            bottom: -60%;
+        }
+
+        // ======
+        // Mobile
+        // ======
+
+        @media only screen and (width: 846px) {
+            right: 15%;
+            bottom: -8%;
+        }
+
+        @media only screen and (max-width: 740px) {
+            right: 17%;
+            bottom: -30%;
+        }
+
+        @media only screen and (width: 667px) {
+            right: 20%;
+            bottom: -20%;
+        }
+
+        @media only screen and (width: 640px) {
+            right: 20%;
+            bottom: -20%;
+        }
+
+        @media only screen and (max-width: 414px) {
+            bottom: -60%;
+        }
+
+        @media only screen and (max-height: 375px) {
+            bottom: -20%;
+        }
+
+        @media only screen and (width: 360px) {
+            bottom: -50%;
+        }
+    }
+}
+
+.works {
+    &-grid {
+        position: relative;
+
+        &-nav { 
+            position: sticky;
+        }
+    }
+
+    &-heading {
+        &-main{
+            position: relative;
+            z-index: 1;
+            right: 12rem;
+        }
+    }
+}
+
+.gutters {
+    position: relative;
+}
+
+// ==============================================================================================================================================================================================
+    // Components
+// ==============================================================================================================================================================================================
+
+header {
+    position: absolute;
+    top: 0;
+
+    // .ruler-header {
+    //     position: sticky;
+    //     z-index: 1;
+    // }
+
+    // .gutters-header-home {
+    //     top: -7rem;
+    // }
+
+    .header-nav {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+
+        #main-header-menu {
+            &:checked + .right-section {
+                position: fixed;
+                top: 0;
+                right: 0;
+            }
+
+            &:checked ~ label {
+                position: fixed;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+.works {
+    .ruler-heading {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.carousel-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.contact-form {
+    &-group {
+        position: relative;
+
+        i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 1.5rem;
+        }
+    }
+}
+
+.FAQ
+,.contact-page
+,.about-page {
+    .ruler-heading{
+        h1 {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}

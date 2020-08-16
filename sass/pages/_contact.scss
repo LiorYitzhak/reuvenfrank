@@ -1,0 +1,33 @@
+.contact-page {
+    direction: rtl;
+
+    .content {
+        min-height: 75vh;
+        padding: 5rem 0;
+        background-color: $color-grey-light;
+
+        .text-field {
+            h2 {
+                margin-bottom: 1rem;
+            }
+
+            ul {
+                .text-field-li {
+                    margin: 4rem 0;
+
+                    i {
+                        margin-left: 1rem;
+                    }
+                }
+
+                ul {
+                    margin-top: 1rem;
+
+                    .social-media-icon:not(:last-of-type) {
+                        margin-left: 2.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

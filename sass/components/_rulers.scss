@@ -1,0 +1,37 @@
+.ruler {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+// .ruler-header {
+//     width: 100vw;
+//     height: 7rem;
+//     background-color: $color-white;
+//     transform: translateY(-7rem);
+
+//     transition: transform .3s cubic-bezier(0.2, 0.885, 0.2, 1);
+// }
+
+.ruler-heading {
+    direction: rtl;
+    padding: 1.5rem 0;
+    background-color: $color-white;
+
+    .btn {
+        margin-top: .5rem;
+
+        // ======
+        // Mobile
+        // ======
+
+        @media only screen and (max-width: 375px) {
+            display: none;
+        }
+    }
+}
+
+.ruler-heading-top {
+    padding-top: 8.5rem;
+}
+

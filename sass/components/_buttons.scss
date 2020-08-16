@@ -1,0 +1,68 @@
+.btn {
+    text-align: center;
+    letter-spacing: .1rem;
+    background-color: red;
+    padding: .8rem 3rem;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+
+    transition: all .15s;
+
+    // ======
+    // Mobile
+    // ======
+
+    @media only screen and (max-width: 414px) {
+        padding: .7rem 1.5rem;
+    }
+
+    &:hover
+    ,&:focus {
+        outline-color: transparent;
+    }
+
+    .redirection-arrow {
+        width: 1rem;
+        margin-right: .5rem;
+        margin-bottom: -.25rem;
+    }
+}
+
+// ====
+// Home
+// ====
+
+.questions {
+    &-heading {
+        .btn {
+            width: 22.5rem;
+        }
+    }
+}
+
+// ===
+// FAQ
+// ===
+
+form {
+    .btn {
+        min-width: 20vh;
+    }
+}
+
+// ======
+// Footer
+// ======
+
+footer {
+    .btn {
+        padding: .5rem 3.5rem;
+        margin-bottom: 1rem;
+
+        img {
+            width: 3rem;
+            backface-visibility: hidden;
+        }
+    }
+}

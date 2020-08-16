@@ -1,0 +1,36 @@
+.about-page {
+    .content {
+        direction: rtl;
+        background-color: $color-grey-light;
+        padding: 2.5rem 0;
+
+        .text-field {
+            h2 {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .image-field {
+            img {
+                width: 40rem;
+                border-radius: 2rem;
+
+                // ======
+                // Mobile
+                // ======
+
+                @media only screen and (max-width: 640px) {
+                    width: 100%;
+                }
+            }
+
+            // ======
+            // Mobile
+            // ======
+
+            @media only screen and (max-width: 640px) {
+                margin-top: 3rem;
+            }
+        }
+    }
+}
